@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UI_Layout</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+	
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+            
+		}
+		 body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+		 /*This is for Header*/ 
+		.container1{
+			border: 1px solid black;
+			display: grid;
+			grid-template-columns: 33vw 67vw;
+			grid-template-rows: 70px;
+		}
+		 /*This is for Body*/
+		.container2{
+			border: 1px solid black;
+			display: grid;
+			grid-template-columns: 51vw 49vw;
+			grid-template-rows: 400px;
+		}
+		/*This is for Footer*/
+		.container3{
+			border: 1px solid black;
+			display: grid;
+			grid-template-columns: 100vw;
+			grid-template-rows: 200px;
+			float: left;
+		}
+		.box{
+			border: 1px solid black;
+			
+		}
+		#box1{
+			padding: 25px;
+			text-align: center;
+		}
+		#box2{
+			padding: 25px;
+			text-align: right;
+		}
+		#box3{
+			text-align: center;
+			padding-top:150px;
+		}
+		#box5{
+			padding: 40px;
+			float: left;
+
+		}
+
+           
+		
+
+	</style>
+		
+</head>
+<body>
+
+    <!--This is for Header--> 
+    <div class="container1">
+      	<div class="box" id="box1">LOREM IPSUM</div>
+      	<div class="box" id="box2">LINK1</div>
+    </div>
+
+    <!--This is for Body-->
+    <div class="container2">	 
+      	<div class="box" id="box3">THIS IS SOME CONTENT ALIGNED IN THE CENTER VERTICALY AND HORIZONTALLY</div>
+      	<div class="box"></div>
+    </div>
+
+    <!--This is for Footer-->
+   	<div class="container3">	 
+      	<div class="box" id="box5">THIS IS THE FOOTER CONTENT WHICH IS ALIGNED LEFT</div>
+    </div>
+      	
+
+     
+
+
+</body>
+</html>
